@@ -44,13 +44,30 @@ The team expanded the calculator's capabilities to solve advanced engineering pr
 
 ## 🛠️ User Guide
 
-1.  **Mode Selection:** At the Main Menu, press keys `1` to `4` to select the corresponding mode.
-2.  **Function Keys:**
-    *   **H Key (Shift)**: Activates secondary functions (sin, cos, log, etc.) in Mode 1 and Mode 2.
-    *   **i Key (SW6)**: Inputs the imaginary unit `i` in Complex Number mode.
-    *   **DEL Key (SW7)**: Backspace function to quickly correct input errors.
-    *   **AC Key (C Button)**: Clears all data and forces the system back to the Main Menu.
-3.  **Execution:** Press the **'='** key to obtain calculation results or proceed to the next coefficient input step.
+### 1. Build and Flash Instructions
+To run this project on a real ATmega324P or in a simulation:
+*   **Software Requirements**: Install **Microchip Studio** (formerly Atmel Studio) and **Proteus Design Suite**.
+*   **Compiling**:
+    1. Open the project solution file (`.atsln`) in Microchip Studio.
+    2. Select **Release** or **Debug** mode from the configuration toolbar.
+    3. Press `F7` or go to `Build > Build Solution` to compile the source code.
+    4. Ensure the output window shows `Build: 1 succeeded`, which generates the `.hex` file in the `Debug/` or `Release/` folder.
+*   **Loading to Proteus**:
+    1. Open the `.pdsprj` file located in the `/simulation` folder.
+    2. Double-click on the **ATmega324P** component in the schematic.
+    3. In the **Program File** field, browse and select the generated `.hex` file.
+    4. Ensure the **CKSEL Fuses** are set to "Internal RC 8.0MHz" (or as configured in your code).
+    5. Click the **Play** button at the bottom left to start the simulation.
 
+### 2. Operating the Calculator
+Once the simulation is running, follow these steps to use the 4 modes:
+*   **Mode Selection**: At the Main Menu, press keys `1` to `4` on the Keypad to enter the desired mode.
+*   **Input Handling**:
+    *   **Numerical Keys**: Standard input for numbers and decimal points.
+    *   **H Key (Shift)**: Activates secondary mathematical functions like `sin`, `cos`, `tan`, `log`, etc.
+    *   **i Key (SW6)**: Inputs the imaginary unit `i` for Complex Number calculations.
+    *   **DEL Key (SW7)**: Performs a backspace operation to correct the most recent character.
+    *   **AC Key (C Button)**: Instantly clears all current data and returns the user to the Main Menu.
+*   **Execution**: Press the **'='** key to calculate the result of an expression or to confirm the current coefficient input (A, B, or C).
 ---
 *This project was completed for the Extended Microcontroller course at Ho Chi Minh City University of Technology (HCMUT).*
