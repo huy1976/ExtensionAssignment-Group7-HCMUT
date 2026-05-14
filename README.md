@@ -12,7 +12,7 @@ Below is the list of team members who developed the project:
 | No. | Full Name | Primary Role |
 | :--- | :--- | :--- |
 | 1 | **Nguyen Phuc Huy** | Team Leader - Logic & Algorithm Programming |
-| 2 | **Phan Nguyen Nguyen Khoi** | GitHub Management & System Analysis |
+| 2 | **Phan Pham Nguyen Khoi** | GitHub Management & System Analysis |
 | 3 | **Nguyen Tuan Khanh** | Proteus Simulation & System Analysis |
 
 ---
